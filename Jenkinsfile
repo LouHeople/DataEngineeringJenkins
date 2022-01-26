@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git([url:'https://github.com/LouHeople/DataEngineeringJenkins.git', branch:'main'])
+                git([url:'https://github.com/LouHeople/DataEngineeringJenkins.git', branch:'master'])
             }
         }
         stage('Build') {
