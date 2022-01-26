@@ -1,6 +1,6 @@
 pipeline {
     agent any
- 
+
     stages {
         stage('Pull') {
             steps {
@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'cat README.md'
+                bat 'echo "banane"'
             }
         }
     }
