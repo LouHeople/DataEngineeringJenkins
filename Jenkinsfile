@@ -6,7 +6,7 @@ pipeline {
             steps {
                 git([url:'https://github.com/LouHeople/DataEngineeringJenkins.git', branch:'master'])
             }
-        }
+        } 
         stage('Build') {
             steps {
                 bat 'docker build -t "dataengineeringjenkins2" .'
