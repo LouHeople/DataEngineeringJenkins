@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'echo "banane"'
+                bat 'docker build -t "DataEngineeringJenkins2" .'
+				bat 'docker run -p 0.0.0.0:3000:3000/tcp DataEngineeringJenkins2'
             }
         }
     }
